@@ -1,0 +1,24 @@
+
+version: "3.5"
+
+services: 
+      api:
+        image: biojj/api-realtor
+        container_name: api-realtor
+        ports:
+          - 3000:3000
+        networks:
+          - docker-realtor
+        
+      web:
+        image: biojj/web-realtor
+        container_name: web-realtor
+        ports: 
+          - 8082:80
+        depends_on:
+          - "api"
+        networks:
+          - docker-realtor
+networks: 
+    docker-realtor:
+      driver: bridge
