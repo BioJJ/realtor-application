@@ -71,6 +71,14 @@ $ docker ps
 
 ## Acesse a aplicação pelo browser: localhost:8082
 
+### Profile: ADM:
+Login: jefferson@gmail.com
+senha: Bio@9311
+
+### Profile: USER: 
+Login: snow@gmail.com
+senha: Snow@2022
+
 #
 ## Aplicações:
 - WEB -> https://github.com/BioJJ/web-realtor
